@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gym Teacher - Welcome</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <img id="profile-img" class="profile-img" src="images/profile.jpg" alt="Profile photo of the gym teacher" />
+        <div class="header-info">
+          <h1 id="teacher-name">Your Gym Teacher's Name</h1>
+          <p class="tagline">Movement. Health. Fun.</p>
+        </div>
+        <div class="upload-area">
+          <label class="upload-label" for="upload-photo">Change photo</label>
+          <input id="upload-photo" type="file" accept="image/*" />
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section aria-labelledby="about-heading" id="about">
+        <h2 id="about-heading">About</h2>
+        <p id="bio">40 Years Experience in the Fitness Industry
+I've been teaching in the biggest fitness clubs across Athens since 1985. 
+I teach a variety of workouts, from aerobic dancing to yoga, indoor 
+cycling, pilates, zumba, aqua fitness and aqua zumba. 
+I follow all the upgrades of fitness and I continue to educate myself 
+with the latest information and science.</p>
+        <p class="hint">YouTube channel: <a href="https://www.youtube.com/@djkgr" target="_blank" rel="noopener">@djkgr</a></p>
+      </section>
+
+      <section aria-labelledby="videos-heading" id="videos">
+        <h2 id="videos-heading">Selected Videos</h2>
+        <p class="hint">Add YouTube video IDs in `js/script.js` (see `VIDEO_IDS`) to show videos from the teacher's channel.</p>
+        <div id="video-grid" class="video-grid" aria-live="polite">
+          <!-- Video embeds will be injected here by js/script.js -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>&copy; <span id="year"></span> Gym Teacher Website</small>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
