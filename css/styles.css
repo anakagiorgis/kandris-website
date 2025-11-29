@@ -1,8 +1,9 @@
 :root{
-  --bg:#f7f7fa;
+  --bg:#e9ecef;
   --card:#ffffff;
   --muted:#666;
   --accent:#2b8aef;
+  --frame-color:#d32f2f;
   --max-width:1000px;
 }
 *{box-sizing:border-box}
@@ -10,8 +11,18 @@ html,body{height:100%}
 body{
   margin:0;
   font-family:Segoe UI, Roboto, Arial, sans-serif;
-  background:var(--bg);
   color:#111;
+  /* Softer page frame */
+  border:2px solid rgba(211,47,47,0.20);
+  padding:18px;
+  /* subtle grey background with wave-like soft shapes */
+  background-color:var(--bg);
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(0,0,0,0.03) 0 8%, transparent 20%),
+    radial-gradient(circle at 90% 80%, rgba(0,0,0,0.03) 0 10%, transparent 30%),
+    linear-gradient(180deg, rgba(255,255,255,0.4), rgba(255,255,255,0.2));
+  background-repeat:no-repeat;
+  background-size:600px 220px, 700px 260px, cover;
 }
 .container{max-width:var(--max-width);margin:0 auto;padding:1rem}
 .site-header{background:linear-gradient(90deg,#fff,#f0f6ff);border-bottom:1px solid #e6ecf3}
@@ -24,6 +35,28 @@ body{
 .upload-area{margin-left:auto;display:flex;flex-direction:column;align-items:flex-end}
 .upload-label{font-size:.85rem;color:var(--accent);cursor:pointer}
 .upload-area input[type="file"]{display:none}
+
+/* Reusable red frame for sections and profile */
+.frame{
+  /* Softer, more elegant red frame */
+  border:2px solid rgba(211,47,47,0.65);
+  border-radius:10px;
+  padding:14px;
+  margin:12px 0;
+  background:linear-gradient(180deg, rgba(211,47,47,0.03), rgba(211,47,47,0.01));
+  box-shadow:0 8px 18px rgba(0,0,0,0.04);
+}
+.profile-frame{display:flex;align-items:center;gap:1rem}
+
+/* Social cards */
+.socials{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.social-card{display:flex;gap:1rem;align-items:flex-start;background:var(--card);padding:12px;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,0.05);}
+.social-icon{width:48px;height:48px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700;color:white}
+.social-icon.facebook{background:#3b5998}
+.social-icon.instagram{background:linear-gradient(45deg,#f58529,#dd2a7b,#515bd4)}
+.social-body h3{margin:0 0 .25rem 0}
+.social-body a{color:var(--accent);text-decoration:none}
+.social-body a:hover{text-decoration:underline}
 
 main{padding:1.25rem 0}
 section{margin-bottom:1.5rem}

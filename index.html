@@ -4,15 +4,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Gym Teacher - Welcome</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css?v=4" />
   </head>
   <body>
     <header class="site-header">
       <div class="container header-row">
-        <img id="profile-img" class="profile-img" src="images/profile.jpg" alt="Profile photo of the gym teacher" />
-        <div class="header-info">
-          <h1 id="teacher-name">Your Gym Teacher's Name</h1>
-          <p class="tagline">Movement. Health. Fun.</p>
+        <div class="profile-frame frame">
+          <img id="profile-img" class="profile-img" src="images/profile.jpg" alt="Profile photo of the gym teacher" />
+            <div class="header-info">
+              <h1 id="teacher-name">Dimitrios Kandris</h1>
+              <p class="tagline">Movement. Health. Fun.</p>
+            </div>
         </div>
         <div class="upload-area">
           <label class="upload-label" for="upload-photo">Change photo</label>
@@ -22,10 +24,9 @@
     </header>
 
     <main class="container">
-      <section aria-labelledby="about-heading" id="about">
+      <section class="frame" aria-labelledby="about-heading" id="about">
         <h2 id="about-heading">About</h2>
-        <p id="bio">40 Years Experience in the Fitness Industry
-I've been teaching in the biggest fitness clubs across Athens since 1985. 
+        <p id="bio">40 Years Experience in the Fitness Industry. I've been teaching in the biggest fitness clubs across Athens since 1985. 
 I teach a variety of workouts, from aerobic dancing to yoga, indoor 
 cycling, pilates, zumba, aqua fitness and aqua zumba. 
 I follow all the upgrades of fitness and I continue to educate myself 
@@ -33,9 +34,33 @@ with the latest information and science.</p>
         <p class="hint">YouTube channel: <a href="https://www.youtube.com/@djkgr" target="_blank" rel="noopener">@djkgr</a></p>
       </section>
 
-      <section aria-labelledby="videos-heading" id="videos">
+      <section class="frame" id="socials" aria-labelledby="socials-heading">
+        <h2 id="socials-heading">Connect</h2>
+        <p class="hint">Follow Dimitrios on social media — fill in the links when ready.</p>
+        <div class="socials">
+          <article class="social-card">
+            <div class="social-icon facebook" aria-hidden="true">f</div>
+            <div class="social-body">
+              <h3>Facebook</h3>
+              <p class="hint">Placeholder for Facebook page. Replace the link below when available.</p>
+              <a id="facebook-link" href="#" target="_blank" rel="noopener">facebook.com/your-page</a>
+            </div>
+          </article>
+
+          <article class="social-card">
+            <div class="social-icon instagram" aria-hidden="true">&#9733;</div>
+            <div class="social-body">
+              <h3>Instagram</h3>
+              <p class="hint">Placeholder for Instagram profile. Replace the link below when available.</p>
+              <a id="instagram-link" href="#" target="_blank" rel="noopener">instagram.com/your-profile</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="frame" aria-labelledby="videos-heading" id="videos">
         <h2 id="videos-heading">Selected Videos</h2>
-        <p class="hint">Add YouTube video IDs in `js/script.js` (see `VIDEO_IDS`) to show videos from the teacher's channel.</p>
+        <p class="hint">Selected workout videos to complement your training — practice safely and consult a professional if needed.</p>
         <div id="video-grid" class="video-grid" aria-live="polite">
           <!-- Video embeds will be injected here by js/script.js -->
         </div>
@@ -48,6 +73,6 @@ with the latest information and science.</p>
       </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js?v=4"></script>
   </body>
 </html>

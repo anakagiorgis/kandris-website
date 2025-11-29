@@ -4,7 +4,8 @@
 const YOUTUBE_CHANNEL_URL = 'https://www.youtube.com/@djkgr';
 // Video IDs added from the links you provided
 const VIDEO_IDS = [
-  'utj600_A2yk',
+  // Final ordering as requested
+  'N1SYh6QdW0U',
   'CQ6DfRCOX8M',
   '74ArP-_ieI8'
 ];

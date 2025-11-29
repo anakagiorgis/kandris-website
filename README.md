@@ -25,6 +25,11 @@ Videos added to the scaffold
 	- `https://youtu.be/CQ6DfRCOX8M` (id: `CQ6DfRCOX8M`)
 	- `https://youtu.be/74ArP-_ieI8` (id: `74ArP-_ieI8`)
 
+Recently updated:
+
+- Inserted `https://youtu.be/N1SYh6QdW0U` (id: `N1SYh6QdW0U`) as the first video in `js/script.js`.
+- Fixed a punctuation typo in the biography (`40 Years Experience in the Fitness Industry.`)
+
 To change the videos later, edit the `VIDEO_IDS` array in `js/script.js` and provide new YouTube IDs.
 
 3. Serve the folder locally. With PowerShell and Python available, run:
@@ -47,3 +52,11 @@ Adding a profile photo
 - Option B (quick preview/upload): use the "Change photo" control in the header. It previews the image immediately and stores it in your browser's `localStorage` so it persists in that browser. This does not upload the file to a server.
 
 If you want me to add server-side image upload support (so the photo is hosted with the site), tell me whether you're happy hosting on GitHub Pages (I can add instructions) or you want a small Node.js backend to accept an upload.
+
+Social links
+
+- The site now includes a **Connect** section with placeholders for Facebook and Instagram. Update the links in `index.html` (elements `#facebook-link` and `#instagram-link`) once you have the real profiles.
+
+Teacher name
+
+- The teacher's name has been set to **Dimitrios Kandris** in the header.
