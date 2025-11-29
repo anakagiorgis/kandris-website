@@ -8,4 +8,4 @@ yarn-debug.log*
 yarn-error.log*
 coverage/
 /.vscode/
-images/profile.jpg
+# images/profile.jpg
